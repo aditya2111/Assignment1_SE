@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>KBC</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- <link rel="stylesheet" href="grid.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<img src="logo.png" alt="logo" class='image' id='img'>
+	<div class='row js-startPage'>
+		<div class='col-5 start'>
+			<h1>Welcome to KBC quiz!</h1>
+			<div class="rules">
+				<p style="font-weight: bold;">Instructions</p>
+				<p> 1.There are total 10 questions.<br>
+					2.Each question has 4 options.<br>
+					3.Select answer and click continue to proceed on next question.<br>
+					4.You cannot go back to previous question.<br>
+					5.Each correct answer gives you 1 point.<br>
+					6.Your score and correct answers will be displayed at the end of quiz.<br>
+					7.Once you select the answer you cannot change the selection
+					(same as in real KBC).<br>
+				</p>
+			</div>
+		<div>
+			<br><button class='js-start hover'>Start Quiz</button>
+		</div>
+		</div>
+	</div>
+	
+	<div class='row hidden' id='question-container'>
+		<section class='question-container col-8'>
+			<div class="question">1.The language of Lakshadweep, a Union Territory of India, is</div><br>
+			<button class='button0 js-answer hover' value='0'>A) Hindi</button>
+			<button class='button1 js-answer hover' value='1'>B) Malayalam</button><br>
+			<button class='button2 js-answer hover' value='2'>C) Tamil</button>
+			<button class='button3 js-answer hover' value='3'>D) Telugu</button>
+		</section>
+	</div>
+	<div class='row'>
+		<div class='continue-container col-8'>
+			<div class='positionLeft'>
+				<span class='js-count hidden'>Question: 1/10</span><br>
+			</div>
+			<button class='continue js-continue hidden'>continue</button>
+		</div>
+	</div>
+	<div class='answers-list hidden' id='list'>
+		<div class="single">
+			<p>1.The language of Lakshadweep. a Union Territory of India, is</p><br>
+			<button class='q0 ans00'>A) Hindi</button>
+			<button class='q0 ans10 correct-ans'>B) Malayalam</button><br>
+			<button class='q0 ans20'>3) Tamil</button>
+			<button class='q0 ans30'>4) Telugu</button>
+		</div>
+		<div class="single">
+			<p>2.According to the Constitution of India, which of the following is NOT one of the main organs of the Government?</p><br>
+			<button class='q1 ans01'>A) Legislature</button>
+			<button class='correct-ans q1 ans11'>B) Bureacracy</button><br>
+			<button class='q1 ans21'>C) Executive</button>
+			<button class='q1 ans31'>D) Judiciary</button>
+		</div>
+		<div class="single">
+			<p>3.Lionel Messi is associated with which of the following sports?</p><br>
+			<button class='q2 ans02'>A) Motor Racing</button>
+			<button class='q2 ans12'>B) Lawn Tennis</button><br>
+			<button class='q2 ans22 correct-ans'>C) Football</button>
+			<button class='q2 ans32'>D) Ice Hockey</button>
+		</div>
+		<div class="single">
+			<p>4.New Horizons’ spacecraft was launched by NASA to study which of the following planet?</p><br>
+			<button class='q3 ans03 correct-ans'>A) Pluto</button>
+			<button class='q3 ans13'>B) Mars</button><br>
+			<button class='q3 ans23'>C) Mercury</button>
+			<button class='q3 ans33'>D) Jupiter</button>
+		</div>
+		<div class="single">
+			<p>5.Boston Tea Party' protest was associated with the revolution of</p><br>
+			<button class='q4 ans04'>A) India</button>
+			<button class='q4 ans14'>B) Italy</button><br>
+			<button class='q4 ans24'>C)French</button>
+			<button class='q4 correct-ans ans34'>D) America</button>
+		</div>
+		<div class="single">
+			<p>6.Who among the following conside as the 'father of artificial intelligence'?</p><br>
+			<button class='q5 ans05'>A) Charles Babbage</button>
+			<button class='q5 ans15'>B) Lee De Forest</button><br>
+			<button class='q5 correct-ans ans25'>C) John McCarthy</button>
+			<button class='q5 ans35'>D) JP Eckart</button><br>
+		</div>
+		<div class="single">
+			<p>7.Who among the following was the first recipient of Rajiv Gandhi Khel Ratna Award?</p><br>
+			<button class='q6 ans06'>A) Sachin Tendulkar</button>
+			<button class='q6 correct-ans ans16'>B) Vishwanathan Anand</button><br>
+			<button class='q6 ans26'>C) Karnam Malleswari</button>
+			<button class='q6 ans36'>D) Saina Nehwal</button>
+		</div>
+		<div class="single">
+			<p>8.In the Kurukshetra war, Arjuna shot arrows at Bhishma hiding behind which character?</p><br>
+			<button class='q7 ans07'>A) Dhrishtadyumna</button>
+			<button class='q7 ans17'>B) Satyaki</button><br>
+			<button class='q7 ans27'>C) Virata</button>
+			<button class='q7 correct-ans ans37'>D) Shikhandi</button>
+		</div>
+		<div class="single">
+			<p>9.Who won the Battle of Panipat that was fought in the eighteenth century?</p><br>
+			<button class='q8 ans08'>A) Sadeshivrao Bhau</button>
+			<button class='q8 ans18'>B) Akbar</button><br>
+			<button class='q8 correct-ans ans28'>C) Ahmed Shah Abdall</button>
+			<button class='q8 ans38'>D) Sher Shah Suri</button>
+		</div>
+		<div class="single">
+			<p>10.Which of these devices convert alternating current or AC into direct current or DC?</p><br>
+			<button class='correct-ans q9 ans09'>A) Rectifier</button>
+			<button class='q9 ans19'>B) Transformer</button><br>
+			<button class='q9 ans29'>C) Inverter</button>
+			<button class='q9 ans39'>D) Transmitter</button>
+		</div>
+	</div>
+	<div class='answer-done hidden'>
+	</div>
+	<div class='hidden retry'>
+		<button type="button" onClick="refreshPage()" class='again'>Play Again</button>
+		<script>
+		function refreshPage(){
+			window.location.reload();
+		} 
+		</script>>
+	</div>
+
+</body>
+</html>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<script></script>
+</body>
+
+</html>

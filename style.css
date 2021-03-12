@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+.hidden {
+  visibility: hidden;
+}
+.selected-answer {
+  background-color: rgb(235, 211, 78);
+  color: saddlebrown;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: rgb(235, 211, 78);
+}
+.continue {
+  width: 100%;
+  background-color: navy;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+}
+
+.continue-container {
+  text-align: right;
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+}
+
+.continue:hover {
+  background-color: rgb(235, 211, 78);
+  color: saddlebrown;
+  cursor: pointer;
+}
+.js-startPage {
+  position: fixed;
+  top: 39%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin: auto;
+}
+.js-start {
+  margin: 15px 12px auto;
+}
+.positionLeft {
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+}
+.rules {
+  border: 2px solid white;
+  border-radius: 10px;
+  display: inline-block;
+}
+button {
+  width: 30%;
+  height: 60px;
+  background-color: navy;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  margin: 0 20px 25px auto;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+#img {
+  position: sticky;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(21, 22, 59);
+}
+#question-container {
+  position: fixed;
+  top: 43%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  font-family: "PT Sans", sans-serif;
+}
+.question {
+  font-family: "PT Sans", sans-serif;
+  width: 36%;
+  height: 80px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  background: navy;
+  margin: 0 20px 25px auto;
+  padding: 2px 2px;
+}
+.row {
+  margin: auto;
+}
+.answers-list {
+  /* background-color: rgb(83, 23, 117); */
+  font-size: 150%;
+  width: 99%;
+  border: 2px solid white;
+  position: absolute;
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-top: 220px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.single {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.end {
+  text-align: center;
+  color: white;
+}
+
+.endScore {
+  text-align: center;
+  font-size: 150%;
+  color: greenyellow;
+}
+.correct-ans {
+  background-color: #38f52c;
+  color: saddlebrown;
+}
+.again:hover {
+  cursor: pointer;
+  background-color: rgb(235, 211, 78);
+  color: saddlebrown;
+}
+.answer-done {
+  background-color: red;
+}
