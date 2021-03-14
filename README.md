@@ -20,4 +20,4 @@ Game Rules:
 7.Once you select the answer you cannot change the selection
 (same as in real KBC).
 
-Open index.html to run the game.!
+Open https://aditya2111.github.io/Assignment1_SE/
